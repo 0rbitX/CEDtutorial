@@ -4,7 +4,6 @@ const tabs = await chrome.tabs.query({
     "https://developer.chrome.com/docs/extensions/*",
   ]
 });
-...
 const collator = new Intl.Collator();
 tabs.sort((a, b) => collator.compare(a.title, b.title));
 
